@@ -345,6 +345,13 @@ input:checked[type="checkbox"]::before {
 
 /* MAIN */
 
+h4,h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
 .mention__container{
     margin-top: 10rem;
     display: flex;

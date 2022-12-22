@@ -160,11 +160,10 @@ Application::$app->cookies->handleGoogleCookies();
 
 
 <footer class="footer__container">
-
-   <a href="/mention-legale">mention légale</a>
-    <a href="#">CGV</a>
-    <a href="#">politique de confidentialité</a>
-
+    <a href="https://github.com/Kamel77127" class="footer__link"> github </a>
+    <a href="/mention-legale" class="footer__link">mention légale</a>
+    <a href="/condition-general-de-vente" class="footer__link">CGV</a>
+    <a href="/politique-de-confidentialite" class="footer__link">politique de confidentialité</a>
 </footer>
     <script src="/javascript/<?= $this->javascript ?>.js"></script>
 </body>
