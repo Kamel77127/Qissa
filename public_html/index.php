@@ -117,8 +117,8 @@ $app->router->post('/panier/paypal-checkout' , [ShopController::class , 'paypalC
 // CGV - RGPD - MENTION LEGALE \\
 
 $app->router->get('/mention-legale' , [\App\Controllers\Divers::class , 'legalMentions']);
-$app->router->get('/politique' , [\App\Controllers\Divers::class , 'cgv']);
-$app->router->get('/utyu' , [\App\Controllers\Divers::class , 'legalMentions']);
+$app->router->get('/condition-general-de-vente' , [\App\Controllers\Divers::class , 'cgv']);
+$app->router->get('/politique-de-confidentialite' , [\App\Controllers\Divers::class , 'rgpd']);
 
 
 $app->run();

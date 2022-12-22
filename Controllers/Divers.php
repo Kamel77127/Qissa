@@ -19,4 +19,10 @@ class Divers extends Controller
         $this->setLayout('/secondLayout');
         return $this->render('/cgv');
     }
+
+    public function rgpd()
+    {
+        $this->setLayout('/secondLayout');
+        return $this->render('/rgpd');
+    }
 }
