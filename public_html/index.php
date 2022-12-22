@@ -114,6 +114,11 @@ $app->router->get('/panier/paypal-checkout' , [ShopController::class , 'paypalCh
 $app->router->post('/panier/paypal-checkout' , [ShopController::class , 'paypalCheckout']);
 
 
+// CGV - RGPD - MENTION LEGALE \\
+
+$app->router->get('/mention-legale' , [\App\Controllers\Divers::class , 'legalMentions']);
+$app->router->get('/politique' , [\App\Controllers\Divers::class , 'cgv']);
+$app->router->get('/utyu' , [\App\Controllers\Divers::class , 'legalMentions']);
 
 
 $app->run();

@@ -75,7 +75,7 @@ Application::$app->cookies->handleGoogleCookies();
                 }
                 ?>
 
-                </li>
+
 
                 <?php
                 if(Application::isGuest()) {

@@ -74,7 +74,7 @@ Application::$app->cookies->handleGoogleCookies();
                     }
                     ?>
 
-                    </li>
+
 
                     <?php
                     if(Application::isGuest()) {
@@ -131,19 +131,19 @@ Application::$app->cookies->handleGoogleCookies();
                     <div>
                         <h5>google analytics</h5>
                         <p style="width:300px;">Google Analytics nous permet d'étudier le parcours du client sur notre site web afin de l'optimiser pour vous accorder une meilleur expérience utilisateur.</p>
-                        <input type="checkbox" name="googleAnalytics" checked="true" class="check-1 position-relative">
+                        <input type="checkbox" name="googleAnalytics" checked="checked" class="check-1 position-relative">
                     </div>
 
                     <div>
                         <h5>2 ème cookie</h5>
                         <p style="width:300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, magni.</p>
-                        <input type="checkbox" name="secondCookie" checked="true" class="check-1 position-relative">
+                        <input type="checkbox" name="secondCookie" checked="checked" class="check-1 position-relative">
                     </div>
 
                     <div>
                         <h5>3 ème cookie</h5>
                         <p style="width:300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, magni.</p>
-                        <input type="checkbox" name="thirdCookie" checked="true" class="check-1">
+                        <input type="checkbox" name="thirdCookie" checked="checked" class="check-1">
                     </div>
 
                 </div>
@@ -159,7 +159,13 @@ Application::$app->cookies->handleGoogleCookies();
 
 
 
+<footer class="footer__container">
 
+   <a href="/mention-legale">mention légale</a>
+    <a href="#">CGV</a>
+    <a href="#">politique de confidentialité</a>
+
+</footer>
     <script src="/javascript/<?= $this->javascript ?>.js"></script>
 </body>
 
