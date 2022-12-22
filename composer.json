@@ -1,0 +1,27 @@
+{
+    "name": "mezia/mvc",
+    "autoload": {
+        "psr-4": {
+            "Mezia\\Mvc\\": "src/",
+            "App\\Core\\": "Core/",
+            "App\\Controllers\\": "Controllers/",
+            "App\\Model\\": "src/Model/",
+            "App\\Repository\\": "src/repository/",
+            "App\\Core\\Form\\": "Core/Form/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Meziane"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "vlucas/phpdotenv": "^5.5",
+        "ext-zip": "*",
+        "paypal/paypal-checkout-sdk": "^1.0",
+        "nyholm/psr7": "^1.5",
+        "nyholm/psr7-server": "^1.0",
+        "ext-curl": "*"
+    }
+}
