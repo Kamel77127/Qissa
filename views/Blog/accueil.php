@@ -12,12 +12,12 @@ $this->meta = "Qissa, maison d'édition de livre orientaux et sur l'histoire et 
         <p>– Imâm ash-Shafi’i –</p>
 
     </article>
-
+    <section class="article__container">
     <?php while ($data = $rows->fetch(PDO::FETCH_ASSOC)) {
         extract($data); ?>
 
 
-        <section class="article__container">
+
             <article class="article__flex">
 
                 <figure><a href="/blog-page/<?= $id ?>"><img src="/assets/images_uploads/BlogImage/<?= $principalImage ?>" alt="Image d'article , <?= $articleTitle ?>"></a></figure>
@@ -34,8 +34,8 @@ $this->meta = "Qissa, maison d'édition de livre orientaux et sur l'histoire et 
                 </div>
             </article>
             <hr class="article__separator">
-        <?php } ?>
-        <div class="pagination__container">
+            <?php } ?>
+            <div class="pagination__container">
 
             <?php if ($currentPage > 1) :  ?>
                 <a class="btn btn__primary btn__pagination" href="/page/<?= $currentPage - 1 ?>">Page précedente</a>
@@ -45,7 +45,7 @@ $this->meta = "Qissa, maison d'édition de livre orientaux et sur l'histoire et 
             if ($currentPage < $pages) :  ?>
                 <a class="btn btn__primary btn__pagination" href="/page/<?= $currentPage + 1 ?>">Page suivante</a>
             <?php endif; ?>
-        </div>
+            </div>
         </section>
 
 </main>
