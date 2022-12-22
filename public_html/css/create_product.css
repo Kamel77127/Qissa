@@ -399,6 +399,21 @@ button {
   color: red;
   margin-top: 0.5rem;
 }
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100vw;
+  height: 100px;
+  background-color: var(--color-principal);
+  color: var(--color-bg1);
+}
+
+.footer__link{
+  margin-top: .3rem;
+}
 @media screen and (min-width: 768px) {
   header {
     position: fixed;
